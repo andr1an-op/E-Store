@@ -8,10 +8,6 @@ export default defineConfig({
 		proxy: {
 			"/api": {
 				target: "http://localhost:5000",
-        changeOrigin: true, // Add this line
-        secure: false, // Set to true if your backend uses HTTPS
-        ws: true, // If you are using WebSocket connections
-        logLevel: 'debug', // Enable debug logging for the proxy
 			},
 		},
 	},
