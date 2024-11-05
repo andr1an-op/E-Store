@@ -21,7 +21,7 @@ const __dirname = path.resolve();
 
 // Konfigurasi CORS
 const corsOptions = {
-	origin: "https://estore-pro.vercel.app", // Ganti dengan URL frontend Anda
+	origin: "https://estore-pro.vercel.app/login", // Ganti dengan URL frontend Anda
 	credentials: true, // Jika Anda menggunakan cookies
   };
   
