@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
- "scripts": {
-    "dev": "concurrently \"npm run dev --prefix front-end\" \"npm run dev --prefix back-end\"",
+  "scripts": {
+    "dev": "nodemon back-end/server.js",
     "start": "node back-end/server.js",
-    "build": "npm run build --prefix front-end && cp -r front-end/dist back-end/dist"
+    "build": "vite build --dist"
   },
   "keywords": [],
   "author": "",

@@ -3,11 +3,10 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "lint": "eslint .",
-    "preview": "vite preview"
+ "scripts": {
+    "dev": "concurrently \"npm run dev --prefix front-end\" \"npm run dev --prefix back-end\"",
+    "start": "node back-end/server.js",
+    "build": "npm run build --prefix front-end && cp -r front-end/dist back-end/dist"
   },
   "dependencies": {
     "@stripe/stripe-js": "^4.3.0",
