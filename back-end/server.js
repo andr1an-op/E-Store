@@ -20,7 +20,7 @@ const PORT = process.env.PORT || 5000;
 const __dirname = path.resolve();
 
 const corsOptions = {
-	origin: ["https://estore-pro.vercel.app/"], // ganti dengan URL frontend Anda di Vercel
+	origin: ["https://estore-pro.vercel.app/"],
 	credentials: true,
   };
   
