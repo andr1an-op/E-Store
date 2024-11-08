@@ -5,7 +5,7 @@ const CartItem = ({ item }) => {
 	const { removeFromCart, updateQuantity } = useCartStore();
 
 	return (
-		<div className='rounded-lg border p-4 shadow-sm border-gray-700 bg-gray-800 md:p-6'>
+		<div className='rounded-lg border p-4 shadow-sm border-gray-700 bg-gray-900 bg-opacity-30 md:p-6'>
 			<div className='space-y-4 md:flex md:items-center md:justify-between md:gap-6 md:space-y-0'>
 				<div className='shrink-0 md:order-1'>
 					<img className='h-20 md:h-32 rounded object-cover' src={item.image} />
@@ -34,7 +34,7 @@ const CartItem = ({ item }) => {
 					</div>
 
 					<div className='text-end md:order-4 md:w-32'>
-						<p className='text-base font-bold text-emerald-400'>${item.price}</p>
+						<p className='text-base font-bold text-white'>Rp.{item.price}</p>
 					</div>
 				</div>
 
@@ -42,12 +42,12 @@ const CartItem = ({ item }) => {
 					<p className='text-base font-medium text-white hover:text-emerald-400 hover:underline'>
 						{item.name}
 					</p>
-					<p className='text-sm text-gray-400'>{item.description}</p>
+					<p className='text-sm text-white'>{item.description}</p>
 
 					<div className='flex items-center gap-4'>
 						<button
-							className='inline-flex items-center text-sm font-medium text-red-400
-							 hover:text-red-300 hover:underline'
+							className='inline-flex items-center text-sm font-medium text-red-600
+							 hover:text-red-500 hover:underline'
 							onClick={() => removeFromCart(item._id)}
 						>
 							<Trash />

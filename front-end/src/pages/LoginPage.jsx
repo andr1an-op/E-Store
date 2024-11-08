@@ -24,7 +24,7 @@ const LoginPage = () => {
 				animate={{ opacity: 1, y: 0 }}
 				transition={{ duration: 0.8 }}
 			>
-				<h2 className='mt-6 text-center text-3xl font-extrabold bg-gradient-to-tl from-white via-emerald-400 to-white bg-clip-text text-transparent'>Login</h2>
+				<h2 className='mt-6 text-center text-3xl font-extrabold bg-gradient-to-tl from-white via-emerald-700 to-white bg-clip-text text-transparent'>Login</h2>
 			</motion.div>
 
 			<motion.div
@@ -33,7 +33,7 @@ const LoginPage = () => {
 				animate={{ opacity: 1, y: 0 }}
 				transition={{ duration: 0.8, delay: 0.2 }}
 			>
-				<div className='bg-gradient-to-r from-slate-900 to-slate-800  px-4 py-9 shadow sm:rounded-lg sm:px-10'>
+				<div className='bg-gradient-to-r from-slate-800 to-slate-600  px-4 py-9 shadow sm:rounded-lg sm:px-10'>
 					<form onSubmit={handleSubmit} className='space-y-6'>
 						<div>
 							<label htmlFor='email' className='block text-sm font-medium text-gray-300'>

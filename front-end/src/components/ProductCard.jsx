@@ -24,10 +24,10 @@ const ProductCard = ({ product }) => {
 			</div>
 
 			<div className='mt-4 px-5 pb-5'>
-				<h5 className='text-xl font-semibold tracking-tight text-white'>{product.name}</h5>
+				<h5 className='text-xl font-semibold tracking-tight text-emerald-900'>{product.name}</h5>
 				<div className='mt-2 mb-5 flex items-center justify-between'>
 					<p>
-						<span className='text-3xl font-bold text-emerald-400'>${product.price}</span>
+						<span className='text-3xl font-bold text-gray-800'>${product.price}</span>
 					</p>
 				</div>
 				<button
